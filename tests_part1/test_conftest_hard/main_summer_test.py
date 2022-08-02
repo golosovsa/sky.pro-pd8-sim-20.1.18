@@ -70,13 +70,11 @@ import os
 def summer(*args):
     return sum(args)
 
-# TODO здесь необходимо сделать рефакторинг
-incoming_list = [7, "4", 15, "12", 95, 5, 3 ,8]
-
 
 def test_sum_numbers(list_creator):
-    # TODO напиште тест здесь
-    pass
+    # TODO напишите тест здесь
+    assert summer(*list_creator) == 149
+
 
 if __name__ == "__main__":
-    os.system("pytest")
+    os.system("pytest -s")
